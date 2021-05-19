@@ -32,7 +32,7 @@
 .nav-item > a,
 .navbar > span,
 h1 {
-  color: #66fcf1 !important; /* Overide Bootstrap */
+  color: #FF0000 !important; /* Overide Bootstrap */
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;

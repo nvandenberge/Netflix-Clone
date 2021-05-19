@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: black;
+  height: 100vh;
+}
+
+label {
+  color: white;
+}
+
+.redColor {
+  color: red;
+}

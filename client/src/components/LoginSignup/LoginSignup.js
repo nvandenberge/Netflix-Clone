@@ -47,7 +47,7 @@ const LoginSignup = () => {
       .then(console.log("USER HAS BEEN SIGNED UP!"))
       .then((response) => {
         response.status === 200
-          ? history.push("/nextPage")
+          ? history.push("/movies")
           : console.log("something aint right");
       })
       .catch((err) => console.log("SIGN UP ERROR ==>", err));
@@ -68,7 +68,7 @@ const LoginSignup = () => {
         .then(console.log("USER HAS BEEN LOGGED IN!"))
         .then((response) => {
           response.status === 200
-            ? history.push("/nextPage")
+            ? history.push("/movies")
             : console.log("something aint right");
         })
         .catch((err) => console.log("LOGIN ERROR ==>", err));
@@ -78,10 +78,12 @@ const LoginSignup = () => {
   };
 
   return (
+    <div className="wrapper">
     <div className="container">
-      <div className="row justify-content-md-center">
+      <h1 className="text-center redColor">Netflix</h1>
+      <div className="row justify-content-md-center mt-5">
         <div className="col-md-6 align-self-start">
-          <h3>Signup</h3>
+          <h3 className="redColor">Signup</h3>
           <form>
             <div className="form-group">
               <label htmlFor="signupEmail">Email</label>
@@ -115,7 +117,7 @@ const LoginSignup = () => {
           </form>
         </div>
         <div className="col-md-6 align-self-start">
-          <h3>Login</h3>
+          <h3 className="redColor">Login</h3>
           <div className="login">
             <form>
               <div className="form-group">
@@ -151,6 +153,7 @@ const LoginSignup = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

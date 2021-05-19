@@ -37,8 +37,8 @@ const NavBar = () => {
           >
             <ul className="nav navbar-nav float-right">
               <li className="nav-item">
-                <Link to="/page1" className="nav-link">
-                  Page1
+                <Link to="/movies" className="nav-link">
+                  Movies
                 </Link>
               </li>
               <li className="nav-item">
@@ -51,14 +51,6 @@ const NavBar = () => {
                   Logout
                 </Link>
               </li>
-              {/* <li className="nav-item">
-                <button
-                  className="nav-link logout-button"
-                  onClick={handleLogout}
-                >
-                  Logout
-                </button>
-              </li> */}
             </ul>
           </div>
         </nav>
